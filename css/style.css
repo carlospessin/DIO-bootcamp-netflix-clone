@@ -9,55 +9,56 @@ li {
   list-style-type: none;
 }
 
-.nav-link:focus, .nav-link:hover {
-    color: #c6c6c6;
+.nav-link:focus,
+.nav-link:hover {
+  color: #c6c6c6;
 }
 
 .dropdown-menu[data-bs-popper] {
-    left: -113px;
+  left: -113px;
 }
 
 .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.801);
+  background-color: rgba(0, 0, 0, 0.801);
 }
 
 .dropdown-item i {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .search-container {
-    position: relative;
-    width: 50px;
+  position: relative;
+  width: 50px;
 }
 
 .search {
-	position: absolute;
-	left: 49px;
-    background-color: rgba(0, 0, 0, 0.801);
-	outline: none;
-	border: none;
-	padding: 0;
-	width: 0;
-	height: 100%;
-	z-index: 10;
-	transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
+  position: absolute;
+  left: 49px;
+  background-color: rgba(0, 0, 0, 0.801);
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
 }
 
 .search:focus {
-	width: 363px; 
-	padding: 0 16px 0 0;
+  width: 363px;
+  padding: 0 16px 0 0;
 }
 
 .expandright {
-	left: auto;
-	right: 49px; 
+  left: auto;
+  right: 49px;
 }
 
 .expandright:focus {
-	padding: 0 0 0 16px;
+  padding: 0 0 0 16px;
 }
 
 .reset {
@@ -70,10 +71,11 @@ li {
 }
 
 .bg-principal {
-  background-image: url("https://occ-0-3926-185.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABYYxvimYvxD00RI4sHxAAO2H7TszXpZQo75vTzk1O3Cb1lisKkVqRPVfm6tDy1nfPTPUgT6BfjbW-8blXCnxc9FAIsBI.webp?r=e42");
+  background-image: url("https://occ-0-3926-185.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUKBDInuoI3Vp-i25AFcAYbqoV6pEvuM8LJan1jv0SWa8eCJXbQq9G-qkAD6qVVRzY_LdMttR8_4CrojdPoLM9WgcE1U.webp?r=e96");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
+  box-shadow: inset 6em 0px 20em 0px black;
 }
 
 .navbar {
@@ -101,4 +103,40 @@ li {
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255);
+}
+
+.billboard {
+  width: 40%;
+  margin-top: 5%;
+}
+
+.description {
+  color: white;
+  width: 40%;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  color: #fff;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.3vw;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+.button-layer {
+    display: flex;
+    width: 40%;
+}
+
+.watch {
+    margin-right: 10px;
+}
+
+.maturity-rating {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    background-color: rgba(51,51,51,.6);
+}
+.maturity-rating span {
+    margin: 14px;
 }
