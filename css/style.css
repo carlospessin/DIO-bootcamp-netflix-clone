@@ -1,3 +1,7 @@
+body {
+    background-color: #141414;
+}
+
 .color-light {
   color: white;
 }
@@ -74,8 +78,7 @@ li {
   background-image: url("https://occ-0-3926-185.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUKBDInuoI3Vp-i25AFcAYbqoV6pEvuM8LJan1jv0SWa8eCJXbQq9G-qkAD6qVVRzY_LdMttR8_4CrojdPoLM9WgcE1U.webp?r=e96");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
-  box-shadow: inset 6em 0px 20em 0px black;
+  box-shadow: inset 3em -20px 20em 0px black;
 }
 
 .navbar {
@@ -133,10 +136,92 @@ li {
 
 .maturity-rating {
     position: absolute;
-    right: 0;
+    right: 0px;
     padding-right: 50px;
+    height: 45px;
     background-color: rgba(51,51,51,.6);
 }
-.maturity-rating span {
-    margin: 14px;
+.maturity-rating div {
+    margin: 0 20px;
+    background-color: red;
+    padding: 7px;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
 }
+
+.title1 {
+    color: white;
+    font-size: 1.4vw;
+    color: #e5e5e5;
+    font-weight: 700;
+}
+
+.firstSection {
+    top: 100px;
+    position: relative;
+}
+
+/* CAROUSEL */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+  }
+  .wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+  }
+
+  .wrapper section .item img{
+    width: 355px;
+    height: 192px;
+    object-fit: cover;
+  }
+
+  .wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+  }
+  .wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+  .wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  }
+  .wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+      display: none;
+    }
+  }
+
+  /* END CAROUSEL */
+
+
